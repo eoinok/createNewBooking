@@ -12,7 +12,11 @@ Make three modifications to the newBooking.html form.
 - Change the action on the form so that when the Submit button is pushed the form data will be submitted to a PHP file called createNewBooking.php. 
 - Add two input boxes to the HTML form one which gets the members ID for the booking and a second which gets the court ID make sure these input boxes use the names memberID and courtID respectively. Note the capitalisation on these names.
 - Modify the createBooking.php file so that it contains an include statement which pulls in code from a file called dbcon.php. This file should contain your database credentials.
-When you have completed these changes try to create a new tennisclub booking. Use memberID = 2 and courtID = 3. To see if it worked type ***Select * from booking*** in the HeidiSQL database application. Is your booking there? Try it again with values memberID = 13 and courtID = 15. What happened? Why was these. Write a comment in the PHP code of createNewBooking.php which explains why these numbers don't work.
+When you have completed these changes try to create a new tennisclub booking. Use memberID = 2 and courtID = 3. To see if it worked type ***Select * from booking*** in the HeidiSQL database application. Is your booking there? Try it again with values memberID = 13 and courtID = 15. What happened? Why was these. Write a comment in the PHP code of createNewBooking.php which explains why these numbers don't work. Commit and push your changes.
+
+# Part 2
+Copy the file called showAllMembers.php and rename the new file createMemberDropdown.php. Replace the credentials and the database connection lines of code in the file with a single line that includes all this code from the pre-existing file in your repo called dbcon.php. Modify this code so that rather than producing a HTML table, the code produces a HTML dropdown using the **&lt;SELECT&gt;** tag. Make sure that your that your select tag uses the name ***memberID***. To test and see your dropdown visit http://localhost/week5lab-yourghithubid/createMemberDropdown.php. You should see a dropdown list of the members in the database.
+
 
 
 
